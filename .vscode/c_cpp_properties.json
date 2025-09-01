@@ -1,0 +1,89 @@
+{
+    "version": 4,
+    "env": {
+        "mtbCompilerArgs": [
+            "-c",
+            "-mcpu=cortex-m0plus",
+            "--specs=nano.specs",
+            "-Og",
+            "-mthumb",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-ffat-lto-objects",
+            "-g",
+            "-Wall"
+        ],
+        "mtbDefaultIncludePath": [
+            ".",
+            "./drivers",
+            "./libs",
+            "./libs/TARGET_CY8CKIT-145-40XX",
+            "./libs/TARGET_CY8CKIT-145-40XX/COMPONENT_BSP_DESIGN_MODUS",
+            "./libs/TARGET_CY8CKIT-145-40XX/COMPONENT_BSP_DESIGN_MODUS/GeneratedSource",
+            "../mtb_shared/capsense/release-v3.0.1",
+            "../mtb_shared/core-lib/release-v1.4.1",
+            "../mtb_shared/core-lib/release-v1.4.1/include",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/COMPONENT_CAT2",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/COMPONENT_CAT2/include",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/COMPONENT_CAT2/include/pin_packages",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/COMPONENT_CAT2/include/triggers",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/COMPONENT_CAT2/source",
+            "../mtb_shared/mtb-hal-cat2/release-v2.0.0/include",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/cmsis",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/cmsis/include",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/devices",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/devices/include",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/devices/include/ip",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/drivers",
+            "../mtb_shared/mtb-pdl-cat2/release-v1.6.1/drivers/include",
+            "${config:modustoolbox.toolsPath}/gcc/lib/gcc/arm-none-eabi/10.3.1/include",
+            "${config:modustoolbox.toolsPath}/gcc/lib/gcc/arm-none-eabi/10.3.1/include-fixed",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v6e-m",
+            "${config:modustoolbox.toolsPath}/gcc/arm-none-eabi/include/c++/10.3.1/backward"
+        ],
+        "mtbDefaultDefines": [
+            "CY_USING_HAL",
+            "CY_APPNAME_mtb_example_psoc4_empty_app",
+            "CY8C4045AZI_S413",
+            "CY_TARGET_DEVICE=CY8C4045AZI_S413",
+            "TARGET_CY8CKIT_145_40XX",
+            "CY_TARGET_BOARD=CY8CKIT_145_40XX",
+            "COMPONENT_BSP_DESIGN_MODUS",
+            "COMPONENT_CAT2",
+            "COMPONENT_CM0P",
+            "COMPONENT_CY8CKIT_145_40XX",
+            "COMPONENT_PSOC4HAL",
+            "COMPONENT_SOFTFP",
+            "DEBUG",
+            "CY_SUPPORTS_DEVICE_VALIDATION",
+            "__GNUC__"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "MTB",
+            "compilerPath": "${config:modustoolbox.toolsPath}/gcc/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "${mtbCompilerArgs}"
+            ],
+            "compileCommands": "./build/compile_commands.json",
+            "intelliSenseMode": "gcc-x86",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "includePath": [
+                "${mtbDefaultIncludePath}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "defines": [
+                "${mtbDefaultDefines}"
+            ]
+        }
+    ]
+}
